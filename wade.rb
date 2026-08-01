@@ -3,18 +3,18 @@
 class Wade < Formula
   desc "All-in-one Node.js version & npm/yarn/pnpm registry manager"
   homepage "https://github.com/wadefengx/wade"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
-  BASE_URL = "https://github.com/wadefengx/wade/releases/download/v0.3.1/"
+  BASE_URL = "https://github.com/wadefengx/wade/releases/download/v0.3.2/"
 
   on_macos do
     if Hardware::CPU.arm?
       url "#{BASE_URL}wade-darwin-arm64.tar.gz"
-      sha256 "883164aba73bd2107b1d464b1071d4c801bc303f58a072621c1f8b8f34ff3687"
+      sha256 "5e92c00df9314503268d2439a4b150e58fe3ec520ade0ebb366f931a3d406948"
     else
       url "#{BASE_URL}wade-darwin-amd64.tar.gz"
-      sha256 "92370e15f92ac55ee178568c63e66ea7752d698f2d8774b36c5598fb727a5515"
+      sha256 "2e712624938b2f2310cc1e0c0b834d9a9c1cd48eb90aa02fad050b74db3cd551"
     end
   end
 
@@ -24,7 +24,7 @@ class Wade < Formula
       # TODO: fill from release
     else
       url "#{BASE_URL}wade-linux-amd64.tar.gz"
-      sha256 "77e9e58bc3fdd04d54852ba6a62c4b07b428358e46040f4047d44e2bf8134543"
+      sha256 "c5e4a08f9f79d149d14146a242a3aed16e6bd9c94d0bd8dac19f7ff09bd34a1c"
     end
   end
 
